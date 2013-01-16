@@ -1,0 +1,1012 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+#header {
+    padding-top: 5px;
+}
+
+#sidebar {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    bottom: 20px;
+    width: 260px;
+    border: solid 1px #CCCCCC;
+    overflow-y: scroll;
+}
+
+#content {
+    position: absolute;
+
+    top: 70px;
+    bottom: 20px;
+    left: 300px;
+    right: 20px;
+}
+
+.form-left-col {
+    width: 310px;
+    float: left;
+}
+
+.form-right-col {
+  width: 610px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    border-bottom: solid 1px #CCCCCC;
+    padding: 8px;
+}
+
+li a:hover {
+    background-color: #C6C6C6;
+    color: #FFF;
+    font-weight: 300;
+}
+
+input, textarea {
+    border: 0px solid #ccc;
+    min-height: 30px;
+    outline: none;
+    background:url(http://static.tumblr.com/61k0yq5/u9Wmatwjs/bg.png) #f0f0f0;
+}
+
+.form-left-col input {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 280px;
+}
+
+textarea {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    height: 200px;
+    width: 250px;
+}
+
+label {
+    display: block;
+}
+
+button {
+    padding: 6px;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, none, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, ails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+		margin: 0;
+
+		padding: 0;
+
+		border: 0;
+
+		font-size: 100%;
+
+		font: inherit;
+
+		vertical-align: baseline; }
+		
+		
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+		display: block; }
+
+	body {
+
+		line-height: 1; }
+
+	ol, ul {
+
+		list-style: none; }
+
+	blockquote, q {
+
+		quotes: none; }
+
+	blockquote:before, blockquote:after,
+
+	q:before, q:after {
+
+		content: '';
+
+		content: none; }
+
+	table {
+
+		border-collapse: collapse;
+
+		border-spacing: 0; }
+
+
+
+/* #Basic Styles
+
+================================================== */
+
+	body {
+
+	background:url(http://static.tumblr.com/61k0yq5/u9Wmatwjs/bg.png) #f0f0f0;
+
+	font: 14px/21px "Droid Sans",Verdana, Geneva, sans-serif ;
+
+	color: #444;
+
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+
+	-webkit-text-size-adjust: 100%; }
+
+
+
+
+
+/* #Typography
+
+================================================== */
+
+	h1, h2, h3, h4, h5, h6 {
+
+
+font-family:'Asap',sans-serif;font-weight:400;font-style:normal;color:#505253;font-size:1em;line-height:1.5em;margin-bottom:1.5em;margin:0;
+
+	 }
+
+	h1,h2,h3,h4,h5,h6{font-family:'nevis-bold',sans-serif;font-weight:normal;text-transform:uppercase;color:#28292a;}
+
+	h1{
+	font-size: 3em;
+	line-height: 2.1818181818181816;
+	margin-bottom: 1.09091em;
+}
+
+	h2{font-size:1.25em;line-height:2.4;margin-bottom:1.2em;}
+
+	h3{font-size:1em;line-height:1.5;margin-bottom:1.5em;}
+
+	h4{font-size:0.875em;line-height:1.7142857142857142;margin-bottom:1.7142857142857142em;}
+
+	h5{font-size:0.75em;line-height:1;margin-bottom:2em;}
+
+	h6{font-size:0.5em;line-height:1.5;margin-bottom:3em;}
+
+	a{color:#28292a;text-decoration:underline;word-wrap:break-word;}
+
+	a:hover{
+	color: #333333;
+}
+
+	p{font-size:1em;line-height:1.5;margin-bottom:1.5em;color:#505253;}
+
+	p strong,p b{color:#28292a;font-style:italic;font-weight:400;}
+
+	ul,ol{margin-bottom:1.5em;padding-left:1.5em;color:#28292a;}
+
+	ul{list-style-type:disc;}
+
+	ol{list-style-type:decimal;}
+
+	blockquote{padding-left:1.5em;color:#28292a;font-style:italic;margin-bottom:1.5em;font-weight:400;}
+
+	blockquote p{color:#28292a;}
+
+	pre { margin-bottom:1.9em; color:#28292a}
+
+	
+
+	.subheader { color: #444; }
+
+
+
+	p { margin: 0 0 21px 0; }
+
+	p img { margin: 0; }
+
+	p.lead { font-size: 21px; line-height: 28px; color: #777;  }
+
+
+
+	em { font-style: italic; }
+
+	strong { font-weight: bold; color: #333; }
+
+	small { font-size: 80%; }
+
+
+
+/*	Blockquotes  */
+
+	blockquote, blockquote p { font-family:"Droid Serif"; font-size: 21px; line-height: 28px; font-style: italic; }
+
+	blockquote { margin: 0 0 20px; padding: 9px 21px 0; border-left: 1px solid #ddd; }
+
+	blockquote cite { display: block; font-size: 14px; color: #ef4f1d; }
+
+	blockquote cite:before { content: "\2014 \0020"; }
+
+
+
+	hr { border: dashed #999; border-width: 1px 0 0; width:60%; clear: both; margin: 14px 0 14px; height: 0; display:inline-block }
+
+
+
+
+
+/* #Links
+
+================================================== */
+
+	a, a:visited { color: #28292A; text-decoration: none; outline: 0; }
+
+	a:hover, a:focus { color: #ef4f1d; }
+
+	p a, p a:visited { line-height: inherit; }
+
+
+
+
+
+/* #Lists
+
+================================================== */
+
+	ul, ol { margin-bottom: 21px; }
+
+	ul { list-style: none outside; }
+
+	ol { list-style: decimal; }
+
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+
+	ul.square { list-style: square outside; }
+
+	ul.circle { list-style: circle outside; }
+
+	ul.disc { list-style: disc outside; }
+
+	ul ul, ul ol,
+
+	ol ol, ol ul { margin: 7px 0 7px 30px; font-size: 90%;  }
+
+	ul ul li, ul ol li,
+
+	ol ol li, ol ul li { margin-bottom: 7px; }
+
+	li { line-height: 21px; margin-bottom: 14px; }
+
+	ul.large li { line-height: 21px; }
+
+	li p { line-height: 21px; }
+
+
+
+	
+
+	
+
+/* #Images
+
+================================================== */
+
+	img {
+
+    max-width: 100%;
+
+    height: auto;
+
+	}
+
+			
+
+    .shadow {
+
+    -moz-box-shadow:    1px 1px 3px 0px  rgba(0, 0, 0, 0.3);
+
+    -webkit-box-shadow: 1px 1px 3px 0px  rgba(0, 0, 0, 0.3);
+
+    box-shadow:         1px 1px 3px 0px  rgba(0, 0, 0, 0.3);
+
+    }
+
+
+
+/* #Site Styles
+
+================================================== */
+
+
+
+
+
+/* HEADER  -------------- */
+
+	header {
+
+    margin-top :21px;
+
+    border:2px solid #fff;
+
+	background-color:#FFF;
+
+	border-radius: 5px;
+
+	-moz-border-radius: 5px;
+
+	-webkit-border-radius: 5px;
+
+
+
+	}
+
+    
+
+    header .wraper {
+
+        position: relative;
+		background-color:
+
+    }
+
+    header .wraper .info {
+
+        position: absolute ;
+
+        top: -52px;
+
+        width: 100%;
+
+         
+
+    }
+
+    
+
+    header h1 { 
+
+        font-size: 21px; 
+
+        line-height: 56px; 
+
+        margin: 31px 0 0 ;
+
+        
+
+        
+
+    }
+
+        
+
+    header h3 { 
+
+        font-size: 14px; 
+
+        line-height: 21px; 
+
+        margin: 7px 0px;
+
+        padding: 35px 7px 0;
+
+        text-align: none;
+
+ 
+
+        
+
+    }
+
+	
+
+	header img.avatar {
+
+    
+
+    border-radius: 3px;
+
+    -moz-border-radius: 3px;
+
+    -webkit-border-radius: 3px;
+
+    border:3px solid #fff;
+
+    margin :0 10px 0 15px;
+
+    
+
+    float: left;
+
+    
+
+	}
+
+
+
+        
+
+/* NAVIGATION -------------- */
+
+	nav {
+
+    text-align:none;    
+
+	}
+
+	
+
+	nav ul
+
+	{
+
+    margin-bottom:0px;
+
+	}
+
+	
+
+	nav ul li {
+
+    display: inline-block;
+
+    padding:8px;
+
+    margin: 2px 0px;
+
+	}
+
+	
+
+	nav ul li a{
+
+    font-family:"Droid Serif", serif;
+
+	}
+
+	
+
+	nav ul li:first-child {
+
+    border-top-left-radius: 5px;
+
+    -moz-border-top-left-radius: 5px;
+
+    -webkit-border-top-left-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+
+    -moz-border-bottom-left-radius: 5px;
+
+    -webkit-border-bottom-left-radius: 5px;
+
+	}
+
+	
+
+	nav ul li:last-child {
+
+    border-top-right-radius: 5px;
+
+    -moz-border-top-right-radius: 5px;
+
+    -webkit-border-top-right-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+
+    -moz-border-bottom-right-radius: 5px;
+
+    -webkit-border-bottom-right-radius: 5px;
+
+	}
+
+
+
+
+
+/* POST  -------------- */
+
+	.post
+
+	{
+
+		border:2px solid #fff;
+
+		background-color:#FFF;
+
+		border-radius: 5px;
+
+		-moz-border-radius: 5px;
+
+		-webkit-border-radius: 5px;
+
+		margin:14px 0;	
+
+	}
+
+
+
+	.post p {
+
+	padding: 7px;
+
+	}
+
+	
+
+	
+
+	.post .content {
+
+    background-color:#eee;
+
+	}
+
+	
+
+	.post .content ul, .post .content ol
+
+	{
+
+    padding: 7px;
+
+    margin-left: 42px;
+
+    text-align: left;	
+
+	}
+
+    
+
+    .post .content ul
+
+	{
+
+    list-style:square ;	
+
+	}
+
+	
+
+	.post .details {
+
+    text-align:none;
+
+	}
+
+	
+
+	.post .details img {
+
+    margin-bottom:7px;
+
+	}
+
+	
+
+	.post .content .tags {
+
+    text-align:none;
+
+    margin-bottom:0px;	
+
+	}
+
+        
+
+	.post .tags li
+
+	{
+
+    background:#fff;
+
+    border-radius: 3px;
+
+    -moz-border-radius: 3px;
+
+    -webkit-border-radius: 3px;
+
+    display: inline-block;
+
+    padding:0 3px ;
+
+    margin-bottom: 7px;
+
+    font-size: 12px;
+
+	}
+
+		
+
+	.post .info li {
+
+    display: inline-block;
+
+    margin-left: 5px;
+
+    margin-bottom: 0px;	
+
+	}
+
+	
+
+	 .post .info li img {
+
+    display:inline;
+
+    margin-bottom:-3px;
+
+	}
+
+        
+
+	.post .info li a {
+
+    padding-left:2px;
+
+    font-size: 12px;
+
+    color:#adadad;
+
+	}
+
+        
+
+	.post .info li a:hover {
+
+    color:#ef4f1d;
+
+	}
+
+	
+
+	.post .content ul.chat {
+
+    padding: 0;
+
+    list-style:none ;
+
+    margin-left:0;
+
+    font-weight: bold;	
+
+	}
+
+    
+
+    .post .content ul.chat li {
+
+    padding: 8px 7px;
+
+    }
+
+	
+
+	.chat .even {
+
+    background-color:#fff;	
+
+	}
+
+    
+
+    .audio_player embed {
+
+     width:100%;
+
+    }
+
+    
+
+    .embed {
+
+    position: relative;
+
+    padding: 0;
+
+    padding-bottom: 56.25%;
+
+    height: 56.25%;
+
+    overflow: hidden;
+
+    }
+
+    
+
+    .embed iframe, .embed object, .embed embed {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    }
+
+	
+
+	
+
+/* Photoset ----------------*/
+
+
+
+    .imgwrapper {
+
+        overflow: hidden;
+
+        position: relative;
+
+        }
+
+    
+
+  
+
+
+        
+
+/* Question -------------- */
+
+
+
+    /*.question {
+
+    
+
+    
+
+        
+
+    }*/
+
+        
+
+    .question img {
+
+    position: relative;
+
+    float: left ;
+
+    margin-left: 10%;
+
+    border-radius: 5px;
+
+    -moz-border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+
+    }
+
+    
+
+    .arrow_box {
+
+    position: relative;
+
+    float: left;
+
+    width: 50%;
+
+    background: #FFF;
+
+    border: 2px solid #ef4f1d;
+
+    padding: 2%;
+
+    margin: 3px;
+
+    border-radius: 2px;
+
+    -moz-border-radius: 2px;
+
+    -webkit-border-radius: 2px;
+
+    }
+
+    .arrow_box:after, .arrow_box:before {
+
+	right: 100%;
+
+	border: solid transparent;
+
+	content: " ";
+
+	height: 0;
+
+	width: 0;
+
+	position: absolute;
+
+	pointer-events: none;
+
+    }
+
+
+
+    .arrow_box:after {
+
+	border-color: rgba(136, 183, 213, 0);
+
+	border-right-color: #FFF;
+
+	border-width: 10px;
+
+	top: 50%;
+
+	margin-top: -10px;
+
+    }
+
+    .arrow_box:before {
+
+	border-color: rgba(136, 183, 213, 0);
+
+	border-right-color: #ef4f1d;
+
+	border-width: 13px;
+
+	top: 50%;
+
+	margin-top: -13px;
+
+    }
+
+
+
+        
+
+    .question p { 
+
+        
+
+    margin-top:7px;
+
+    font-weight: bold;
+
+    text-align: none;
+
+    background-color:#fff;
+
+    padding: 0px;
+
+    margin:0px;
+
+    clear: both;
+
+    }
+
+        
+
+    
+
+	
+
+/* #Pagination ------------- */
+
+	.pagination {
+
+		text-align:none;
+
+		padding-top:14px;
+
+	}
+
+	
+
+	.nav li a, .pagination li, .pagination li a{
+
+    height:40px;
+
+    width:40px;
+
+    border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    -webkit-border-radius: 20px;
+
+    display:inline-block;
+
+    
+
+	}
+
+	
+
+	.pagination li a{
+
+    background:#EAEEEF url(http://static.tumblr.com/61k0yq5/fHVmatygt/pagination.png) no-repeat;
+
+    background-position: 9px 10px;
+
+	}
+
+	
+
+	.pagination li a.next{
+
+    background-image: url(http://static.tumblr.com/61k0yq5/fHVmatygt/pagination.png) ;
+
+    background-position: -29px 10px;
+
+	}
+
+	
+
+	
+
+	.nav li a:hover, .pagination li a:hover{
+
+    background-color:#ef4f1d ;
+
+	}
+
+
+
+
+
+/* FOOTER -------------   */
+
+	footer {
+	border-top: #999999 dashed 1px;
+	padding-top: 21px;
+	text-align: none;
+	font-family: "Droid Serif", Serif;
+	font-style: normal;
+	
+
+	}
+
+	
+
+	footer ul li {
+
+    display: inline-block;
+
+	}
+
+	
+
+	footer ul li a {
+
+    background-color:#EAEEEF;
+
+	}
+
+
+
+
+
+    /*==========*/
+
+    .none 
+
+    {
+
+        text-align: none;
+
+    }
+
+
+
+
+

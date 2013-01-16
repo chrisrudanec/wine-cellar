@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Backbone Cellar</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+<link rel="stylesheet" href="bootstrap-responsive.min.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+<div id="header"><span class="title">Backbone Cellar</span></div>
+
+<div id="sidebar"></div>
+
+<div id="content">
+<h2>Welcome to Backbone Cellar</h2>
+<p>
+This is a sample application part of of three-part tutorial showing how to build a CRUD application with Backbone.js.
+</p>
+</div>
+
+<!-- Templates -->
+<script type="text/template" id="tpl-wine-list-item">
+
+
+<a href="#wines/<%= id %>"><%= name %> </a>
+
+
+</script>
+
+<script type="text/template" id="tpl-wine-details">
+    <div class="form-left-col">
+        <label><h3>Name:</h3></label>
+        <input type="text" id="name" name="name" value=" <%= name %> " required/>
+        <label><h3>Grapes:</h3></label>
+        <input type="text" id="grapes" name="grapes" value="<%= grapes %>"/>
+        <label><h3>Country:</h3></label>
+        <input type="text" id="country" name="country" value="<%= country %>"/>
+        <label><h3>Region:</h3></label>
+        <input type="text" id="region" name="region"  value="<%= region %>"/>
+        <label><h3>Year:</h3></label>
+        <input type="text" id="year" name="year"  value="<%= year %>"/>
+        <label><h3>Price:</h3></label>
+        <input type="text" id="price" name="price"  value="<%= price %>"/>
+    </div>
+    <div class="form-right-col">
+        <img height="400" src="pics/<%= picture %>"/>
+        <label><h3>Notes:</h3></label>
+        <%= description %>
+    </div>
+</script>
+
+<!-- JavaScript -->
+<script src="lib/jquery-1.7.1.min.js"></script>
+<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>
+<script src="js/main.js"></script>   
+
+</body>
+</html>
